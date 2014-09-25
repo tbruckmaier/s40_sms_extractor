@@ -62,15 +62,23 @@ fields: x yy zzzzz (x -> id, yy -> length (16 bit le), zzzz -> data)
 # References
 
 http://developer.nokia.com/community/discussion/showthread.php/4050-SMS-time-stamp-format-with-time-zone-parameter
-http://en.wikipedia.org/wiki/Short_Message_Service#Flash_SMS
-http://en.wikipedia.org/wiki/User_Data_Header
-http://en.wikipedia.org/wiki/GSM_03.38#UCS-2_Encoding
-http://en.wikipedia.org/wiki/GSM_03.40#Data_Coding_Scheme
-http://mobileforensics.files.wordpress.com/2007/06/understanding_sms.pdf
-http://wammu.eu/docs/manual/protocol/nokia-s40-sms.html
-http://www.smartposition.nl/resources/sms_pdu.html
-https://gist.github.com/laughinghan/6861452 (Incorrect though)
-http://developer.nokia.com/community/discussion/showthread.php/204463-Raw-text-message-file-format-(from-*-nbf)-description
-http://sourceforge.net/projects/nbuexplorer/
 
-# 
+http://en.wikipedia.org/wiki/Short_Message_Service#Flash_SMS
+
+http://en.wikipedia.org/wiki/User_Data_Header
+
+http://en.wikipedia.org/wiki/GSM_03.38#UCS-2_Encoding
+
+http://en.wikipedia.org/wiki/GSM_03.40#Data_Coding_Scheme
+
+http://mobileforensics.files.wordpress.com/2007/06/understanding_sms.pdf
+
+http://wammu.eu/docs/manual/protocol/nokia-s40-sms.html
+
+http://www.smartposition.nl/resources/sms_pdu.html
+
+https://gist.github.com/laughinghan/6861452 (Incorrect though)
+
+http://developer.nokia.com/community/discussion/showthread.php/204463-Raw-text-message-file-format-(from-*-nbf)-description
+
+http://sourceforge.net/projects/nbuexplorer/
