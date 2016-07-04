@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # coding=utf-8
 
 import binascii
@@ -279,7 +280,7 @@ def main():
         for file in files:
             full_path = os.path.join(path, file)
             msg = Message(full_path)
-            print full_path, msg
+            print(full_path, msg)
 
 if __name__ == "__main__":
     main()
