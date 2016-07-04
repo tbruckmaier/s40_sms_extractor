@@ -8,8 +8,9 @@ tested with a Nokia 301 and is somewhat incomplete, but the actual data
 extraction and parsing is there.
 
 # Usage
-Extract the Backup.NBF file (it's just a zip file) and update the path in
-main() to point to the predefmessages folder in the extracted backup. 
+Extract the Backup.NBF file (it's just a zip file), execute sms.py and give
+the path to the predefmessages folder in the extracted backup as first
+parameter.
 
 # Message Format
 
