@@ -1,10 +1,21 @@
 #!/usr/bin/env python
 # coding=utf-8
+"""
+Extracts (sms) messages from a nokia s40 backup
+
+Usage: sms.py message_folder
+
+Arguments:
+* message_folder: folder "prefdefmessages" containing encoded sms
+"""
 
 import binascii
 import math
-import os.path, datetime, time
+import os.path
+import datetime
+import time
 import array
+import sys
 
 gsm = ("@£$¥èéùìòÇ\nØø\rÅåΔ_ΦΓΛΩΠΨΣΘΞ\x1bÆæßÉ !\"#¤%&'()*+,-./0123456789:;<=>?"
        "¡ABCDEFGHIJKLMNOPQRSTUVWXYZÄÖÑÜ`¿abcdefghijklmnopqrstuvwxyzäöñüà").decode('utf-8')
@@ -275,12 +286,21 @@ class Message:
 
         return "%c %s %s %s" % (send_chr, time.strftime("%Y-%m-%d %H:%M:%S", self.time), self.number, self.message.encode('utf-8'))
 
+def usage():
+    """Print usage and exit"""
+    print(__doc__)
+    sys.exit(2)
+
 def main():
-    for path, dirs, files in os.walk("/Users/nicolae/Desktop/meh/predefmessages"):
+    """Extract messages from all files in given folder"""
+    folder = sys.argv[1]
+    for path, _, files in os.walk(folder):
         for file in files:
             full_path = os.path.join(path, file)
             msg = Message(full_path)
-            print(full_path, msg)
+            print("%s%s" % (full_path, msg))
 
 if __name__ == "__main__":
+    if len(sys.argv) <= 1:
+        usage()
     main()
